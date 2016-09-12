@@ -12,9 +12,9 @@ if [ $# -ne 2 ]
 fi
 
 if [ ! -e $1 ]
-  then echo $1."file does NOT exist"
+  then echo $1."file does NOT exist" ; exit
 elif [ ! -e $2 ]
-  then echo $2."file does NOT exist"
+  then echo $2."file does NOT exist" ; exit
 fi
 
 a=`ls -l $f1 | cut -c1-10`
