@@ -5,7 +5,7 @@
 
 int main(int argc, char const *argv[])
 {
-     pid_t  pid,child_id;
+     pid_t  pid;
      pid = fork();
      if (pid<0)
      {
@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
      }
      else if(pid==0)
      {
-        printf("This is Chils process\n");
+        printf("This is Child process\n");
         printf("\nChild process i'd : %d",getpid());
         printf("\nParent process i'd : %d",getppid());
      }
