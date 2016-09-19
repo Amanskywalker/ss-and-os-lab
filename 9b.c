@@ -14,9 +14,9 @@ int main(int argc, char const *argv[])
      }
      else if(pid==0)
      {
+        printf("This is Chils process\n");
         printf("\nChild process i'd : %d",getpid());
         printf("\nParent process i'd : %d",getppid());
-        return 0;
      }
      else
      {
