@@ -20,7 +20,7 @@ int ext()
 int main(int argc,char* argv[])
 {
   printf("Enter the airthmetic expressions :");
-  if(yylex()==0);
+  yylex();
   int b=ob+cb;
   if((id==op+1) && (b%2==0) && (ob==cb) && (flag==1))
   {

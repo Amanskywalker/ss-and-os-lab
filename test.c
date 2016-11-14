@@ -2,7 +2,7 @@
 
 // this is a commented program to check the working of 1b.l program
 int a=0;
-
+int b=0;
 /*
 this is multi line comment to check the working.
 */
