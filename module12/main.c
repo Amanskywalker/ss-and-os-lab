@@ -21,10 +21,16 @@ int main(int argc, char const *argv[]) {
 
   while (ContinueWhile)
   {
-    vector_init(v);
+    vector V;
+    vector_init(&V);
     printf("$ -> ");
     scanf("%s",Command);
 
+    if (preg_match(Command, "[eE][xX][iI][tT]"))
+    {
+      printf("Thank You\n");
+      ContinueWhile = 0;
+    }
 
   }
   return 0;
